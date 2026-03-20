@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Vinayaga South Indian Cafe — Taste the Tradition</title>
+    <meta name="description" content="Sri Vinayaga South Indian Cafe — Authentic South Indian cuisine crafted with love and tradition. Experience the rich flavors of home-cooked meals in a premium dining atmosphere.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">🍛</span>
+                <span class="logo-text">Sri Vinayaga</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#specialties">Specialties</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#reservation" class="nav-cta">Book a Table</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-tagline animate-fade-up">★ Since 1985 ★</span>
+            <h1 class="hero-title animate-fade-up delay-1">Taste the <span class="text-gradient">Tradition</span></h1>
+            <p class="hero-subtitle animate-fade-up delay-2">Authentic South Indian cuisine crafted with love, served with warmth. Every dish tells a story of heritage and flavor.</p>
+            <div class="hero-buttons animate-fade-up delay-3">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="#reservation" class="btn btn-outline">Reserve Table</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <img src="images/interior.png" alt="Restaurant Interior" loading="lazy">
+                    <div class="about-image-badge">
+                        <span class="badge-number">40+</span>
+                        <span class="badge-text">Years of Service</span>
+                    </div>
+                </div>
+                <div class="about-content reveal">
+                    <span class="section-label">Our Story</span>
+                    <h2 class="section-title">A Legacy of <span class="text-gradient">Authentic Flavors</span></h2>
+                    <p class="about-text">Welcome to <strong>Sri Vinayaga South Indian Cafe</strong> — where tradition meets taste. For over four decades, we've been serving the finest South Indian cuisine, prepared with hand-ground spices, fresh ingredients, and recipes passed down through generations.</p>
+                    <p class="about-text">From our signature crispy dosas to aromatic biryanis, every dish is a celebration of flavors that transport you to the heart of South India.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">40+</span>
+                            <span class="stat-label">Years</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">150+</span>
+                            <span class="stat-label">Dishes</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50K+</span>
+                            <span class="stat-label">Happy Guests</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4.8</span>
+                            <span class="stat-label">Rating ★</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section menu-section" id="menu">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Our Menu</span>
+                <h2 class="section-title">Explore Our <span class="text-gradient">Delicious Menu</span></h2>
+                <p class="section-subtitle">From breakfast classics to dinner specials — crafted with love</p>
+            </div>
+
+            <div class="menu-tabs reveal">
+                <button class="menu-tab active" data-category="breakfast">🌅 Breakfast</button>
+                <button class="menu-tab" data-category="lunch">☀️ Lunch</button>
+                <button class="menu-tab" data-category="dinner">🌙 Dinner</button>
+                <button class="menu-tab" data-category="specials">⭐ Specials</button>
+            </div>
+
+            <div class="menu-grid" id="menuGrid">
+                <!-- Breakfast Items -->
+                <div class="menu-card reveal" data-category="breakfast">
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Masala Dosa</h3>
+                            <span class="menu-price">₹80</span>
+                        </div>
+                        <p>Crispy rice crepe filled with spiced potato, served with sambar & chutney</p>
+                        <span class="menu-tag veg">Pure Veg</span>
+                    </div>
+                </div>
+                <div class="menu-card reveal" data-category="breakfast">
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Idli Sambar</h3>
+                            <span class="menu-price">₹60</span>
+                        </div>
+                        <p>Soft steamed rice cakes served with hot sambar & coconut chutney</p>
+                        <span class="menu-tag veg">Pure Veg</span>
+                    </div>
+                </div>
+                <div class="menu-card reveal" data-category="breakfast">
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Pongal</h3>
+                            <span class="menu-price">₹70</span>
+                        </div>
+                        <p>Creamy rice & lentil dish tempered with pepper, cumin & ghee</p>
+                        <span class="menu-tag veg">Pure Veg</span>
+                    </div>
+                </div>
+                <div class="menu-card reveal" data-category="breakfast">
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Poori Masala</h3>
+                            <span class="menu-price">₹75</span>
+                        </div>
+                        <p>Fluffy fried bread served with spicy potato curry</p>
+                        <span class="menu-tag veg">Pure Veg</span>
+                    </div>
+                </div>
+                <div class="menu-card reveal" data-category="breakfast">
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Medu Vada</h3>
+                            <span class="menu-price">₹50</span>
+                        </div>
+                        <p>Crispy golden urad dal fritters with sambar & chutney</p>
+                        <span class="menu-tag veg">Pure Veg</span>
+                    </div>
+                </div>
+                <div class="menu-card reveal" data-category="breakfast">
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Uttapam</h3>
+                            <span class="menu-price">₹70</span>
+                        </div>
+                        <p>Thick rice pancake topped with onions, tomatoes & green chillies</p>
+                        <span class="menu-tag veg">Pure Veg</span>
+                    </div>
+                </div>
+
+                <!-- Lunch Items -->
+                <div class="menu-card reveal" data-category="lunch" style="display:none">
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>South Indian Meals</h3>
+                            <span class="menu-price">₹150</span>
+                        </div>
+                        <p>Full thali with rice, sambar, rasam, kootu, poriyal, curd & payasam</p>
+                        <span class="menu-tag veg">Pure Veg</span>
+                    </div>
+                </div>
+                <div class="menu-card reveal" data-category="lunch" style="display:none">
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Chicken Biryani</h3>
+                            <span class="menu-price">₹180</span>
+                        </div>
+                        <p>Fragrant basmati rice layered with tender spiced chicken & saffron</p>
+                        <span class="menu-tag non-veg">Non-Veg</span>
+                    </div>
+                </div>
+                <div class="menu-card reveal" data-category="lunch" style="display:none">
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Mutton Curry Rice</h3>
+                            <span class="menu-price">₹220</span>
+                        </div>
+                        <p>Slow-cooked mutton curry served with steamed rice & pickle</p>
+                        <span class="menu-tag non-veg">Non-Veg</span>
+                    </div>
+                </div>
+                <div class="menu-card reveal" data-category="lunch" style="display:none">
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Chettinad Chicken</h3>
+                            <span class="menu-price">₹200</span>
+                        </div>
+                        <p>Spicy Chettinad-style chicken with freshly ground masala</p>
+                        <span class="menu-tag non-veg">Non-Veg</span>
+                    </div>
+                </div>
+                <div class="menu-card reveal" data-category="lunch" style="display:none">
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Veg Biryani</h3>
+                            <span class="menu-price">₹140</span>
+                        </div>
+                        <p>Aromatic basmati rice with mixed vegetables & fragrant spices</p>
+                        <span class="menu-tag veg">Pure Veg</span>
+                    </div>
+                </div>
+                <div class="menu-card reveal" data-category="lunch" style="display:none">
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Fish Fry Rice</h3>
+                            <span class="menu-price">₹190</span>
+                        </div>
+                        <p>Crispy fried fish served with lemon rice & onion raita</p>
+                        <span class="menu-tag non-veg">Non-Veg</span>
+                    </div>
+                </div>
+
+                <!-- Dinner Items -->
+                <div class="menu-card reveal" data-category="dinner" style="display:none">
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Parotta & Salna</h3>
+                            <span class="menu-price">₹90</span>
+                        </div>
+                        <p>Flaky layered parotta with spicy vegetable salna</p>
+                        <span class="menu-tag veg">Pure Veg</span>
+                    </div>
+                </div>
+                <div class="menu-card reveal" data-category="dinner" style="display:none">
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Kothu Parotta</h3>
+                            <span class="menu-price">₹120</span>
+                        </div>
+                        <p>Shredded parotta tossed with egg, spices & curry leaves</p>
+                        <span class="menu-tag non-veg">Non-Veg</span>
+                    </div>
+                </div>
+                <div class="menu-card reveal" data-category="dinner" style="display:none">
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Naan & Paneer Butter</h3>
+                            <span class="menu-price">₹160</span>
+                        </div>
+                        <p>Soft butter naan with creamy tomato paneer gravy</p>
+                        <span class="menu-tag veg">Pure Veg</span>
+                    </div>
+                </div>
+                <div class="menu-card reveal" data-category="dinner" style="display:none">
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Chicken 65</h3>
+                            <span class="menu-price">₹170</span>
+                        </div>
+                        <p>Spicy deep-fried chicken with curry leaves & red chilli</p>
+                        <span class="menu-tag non-veg">Non-Veg</span>
+                    </div>
+                </div>
+                <div class="menu-card reveal" data-category="dinner" style="display:none">
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Egg Dosa</h3>
+                            <span class="menu-price">₹70</span>
+                        </div>
+                        <p>Crispy dosa with a layer of spiced scrambled egg</p>
+                        <span class="menu-tag non-veg">Non-Veg</span>
+                    </div>
+                </div>
+                <div class="menu-card reveal" data-category="dinner" style="display:none">
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Chapathi Set</h3>
+                            <span class="menu-price">₹100</span>
+                        </div>
+                        <p>Soft wheat chapathi with dal fry & vegetable kurma</p>
+                        <span class="menu-tag veg">Pure Veg</span>
+                    </div>
+                </div>
+
+                <!-- Special Items -->
+                <div class="menu-card reveal" data-category="specials" style="display:none">
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Crab Masala</h3>
+                            <span class="menu-price">₹350</span>
+                        </div>
+                        <p>Fresh crab cooked in spicy Chettinad masala with coconut</p>
+                        <span class="menu-tag non-veg">Chef's Special</span>
+                    </div>
+                </div>
+                <div class="menu-card reveal" data-category="specials" style="display:none">
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Mutton Biryani</h3>
+                            <span class="menu-price">₹280</span>
+                        </div>
+                        <p>Premium mutton dum biryani slow-cooked with aromatic spices</p>
+                        <span class="menu-tag non-veg">Chef's Special</span>
+                    </div>
+                </div>
+                <div class="menu-card reveal" data-category="specials" style="display:none">
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Ghee Roast Dosa</h3>
+                            <span class="menu-price">₹120</span>
+                        </div>
+                        <p>Extra crispy dosa roasted in pure ghee, golden & aromatic</p>
+                        <span class="menu-tag veg">Chef's Special</span>
+                    </div>
+                </div>
+                <div class="menu-card reveal" data-category="specials" style="display:none">
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Filter Coffee</h3>
+                            <span class="menu-price">₹30</span>
+                        </div>
+                        <p>Traditional South Indian filter coffee brewed to perfection</p>
+                        <span class="menu-tag veg">Must Try!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section class="section specialties-section" id="specialties">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Chef's Pick</span>
+                <h2 class="section-title">Our <span class="text-gradient">Signature Dishes</span></h2>
+                <p class="section-subtitle">The dishes that made us famous — must-try flavors!</p>
+            </div>
+            <div class="specialties-grid">
+                <div class="specialty-card reveal">
+                    <div class="specialty-image">
+                        <img src="images/dosa.png" alt="Crispy Masala Dosa" loading="lazy">
+                        <div class="specialty-overlay">
+                            <span class="specialty-badge">★ Bestseller</span>
+                        </div>
+                    </div>
+                    <div class="specialty-content">
+                        <h3>Crispy Masala Dosa</h3>
+                        <p>Our legendary paper-thin dosa, crispy on the outside, filled with perfectly spiced potato masala. A breakfast icon.</p>
+                        <span class="specialty-price">₹80</span>
+                    </div>
+                </div>
+                <div class="specialty-card reveal">
+                    <div class="specialty-image">
+                        <img src="images/biryani.png" alt="Suvai Special Biryani" loading="lazy">
+                        <div class="specialty-overlay">
+                            <span class="specialty-badge">★ Signature</span>
+                        </div>
+                    </div>
+                    <div class="specialty-content">
+                        <h3>Vinayaga Special Biryani</h3>
+                        <p>Our legendary biryani — slow-cooked in a sealed pot with aromatic spices, saffron, and tender meat at Sri Vinayaga. Pure magic.</p>
+                        <span class="specialty-price">₹220</span>
+                    </div>
+                </div>
+                <div class="specialty-card reveal">
+                    <div class="specialty-image">
+                        <img src="images/idli.png" alt="Soft Idli Set" loading="lazy">
+                        <div class="specialty-overlay">
+                            <span class="specialty-badge">★ Classic</span>
+                        </div>
+                    </div>
+                    <div class="specialty-content">
+                        <h3>Fluffy Idli Platter</h3>
+                        <p>Cloud-soft idlis served with three chutneys and our signature sambar — the perfect comfort breakfast.</p>
+                        <span class="specialty-price">₹60</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Gallery</span>
+                <h2 class="section-title">A Feast for <span class="text-gradient">Your Eyes</span></h2>
+                <p class="section-subtitle">Peek into our kitchen, dining space, and plated art</p>
+            </div>
+            <div class="gallery-grid reveal">
+                <div class="gallery-item gallery-large">
+                    <img src="images/hero.png" alt="South Indian Thali" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>South Indian Thali</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dosa.png" alt="Crispy Dosa" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Crispy Dosa</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/biryani.png" alt="Special Biryani" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Special Biryani</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/interior.png" alt="Restaurant Ambiance" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Our Ambiance</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/desserts.png" alt="Desserts" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Sweet Endings</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/idli.png" alt="Idli Platter" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Idli Platter</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Reviews</span>
+                <h2 class="section-title">What Our <span class="text-gradient">Guests Say</span></h2>
+            </div>
+            <div class="testimonials-carousel reveal" id="testimonialsCarousel">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Best dosa I've ever had! The masala dosa is perfectly crispy and the sambar is divine. Been coming here for 15 years and it never disappoints."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">R</div>
+                            <div>
+                                <strong>Rajesh Kumar</strong>
+                                <span>Regular Customer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"The biryani here is out of this world! Perfectly spiced, tender meat, and that aroma when they open the pot — pure magic. A must visit!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">P</div>
+                            <div>
+                                <strong>Priya Shankar</strong>
+                                <span>Food Blogger</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"This place is a gem! The filter coffee alone is worth the visit. The full meals thali is incredibly generous and tastes like home-cooked food."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">A</div>
+                            <div>
+                                <strong>Arun Prakash</strong>
+                                <span>Local Guide</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Amazing ambiance and even more amazing food! The crab masala is the best I've tasted. Staff is friendly and service is quick. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">M</div>
+                            <div>
+                                <strong>Meena Devi</strong>
+                                <span>Food Enthusiast</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevBtn" aria-label="Previous">‹</button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                    <button class="carousel-btn" id="nextBtn" aria-label="Next">›</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="section reservation-section" id="reservation">
+        <div class="container">
+            <div class="reservation-grid">
+                <div class="reservation-info reveal">
+                    <span class="section-label">Reservation</span>
+                    <h2 class="section-title">Book a <span class="text-gradient">Table</span></h2>
+                    <p>Reserve your spot for a memorable dining experience. Walk-ins welcome, but reservations guarantee your table!</p>
+                    <div class="reservation-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">📍</span>
+                            <div>
+                                <strong>Location</strong>
+                                <p>10777/7, Block 10A, Balmiki Colony, Karol Bagh, New Delhi - 110005</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🕐</span>
+                            <div>
+                                <strong>Timings</strong>
+                                <p>7:00 AM - 11:00 PM (All days)</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">📞</span>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>+91 98765 43210</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">📧</span>
+                            <div>
+                                <strong>Email</strong>
+                                <p>hello@srivinayagacafe.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reservation-form-wrapper reveal">
+                    <form class="reservation-form" id="reservationForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guestName">Your Name</label>
+                                <input type="text" id="guestName" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guestPhone">Phone Number</label>
+                                <input type="tel" id="guestPhone" placeholder="+91 XXXXX XXXXX" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guestDate">Date</label>
+                                <input type="date" id="guestDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guestTime">Time</label>
+                                <input type="time" id="guestTime" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guestCount">Number of Guests</label>
+                                <select id="guestCount" required>
+                                    <option value="">Select</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5 People</option>
+                                    <option value="6">6+ People</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="occasion">Occasion</label>
+                                <select id="occasion">
+                                    <option value="">Select (Optional)</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="date">Date Night</option>
+                                    <option value="business">Business</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="specialRequest">Special Requests</label>
+                            <textarea id="specialRequest" placeholder="Any dietary preferences or special requirements..." rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submitReservation">Reserve My Table</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo-icon">🍛</span>
+                    <span class="logo-text">Sri Vinayaga</span>
+                    <p>Sri Vinayaga South Indian Cafe — Authentic South Indian cuisine since 1985. Every dish, a tradition. Every meal, a memory.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" class="social-link">f</a>
+                        <a href="#" aria-label="Instagram" class="social-link">📷</a>
+                        <a href="#" aria-label="Twitter" class="social-link">𝕏</a>
+                        <a href="#" aria-label="YouTube" class="social-link">▶</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#reservation">Reservations</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Timings</h4>
+                    <p>Monday – Sunday</p>
+                    <p><strong>Breakfast:</strong> 7AM – 11AM</p>
+                    <p><strong>Lunch:</strong> 12PM – 3:30PM</p>
+                    <p><strong>Dinner:</strong> 6:30PM – 11PM</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <p>10777/7, Block 10A, Balmiki Colony</p>
+                    <p>Karol Bagh, New Delhi - 110005</p>
+                    <p>+91 98765 43210</p>
+                    <p>hello@srivinayagacafe.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Sri Vinayaga South Indian Cafe. All rights reserved. Made with ❤️ and lots of sambar.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
